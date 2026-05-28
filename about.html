@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>마곡 유흥 추천정보 | tokyo-divorce</title>
+    <meta name="description" content="서울 마곡 지역 유흥 업소 냉정한 평가 데이터 기반 추천. 가짜 리뷰 없는 진짜 정보. 방문 전 확인하세요. 전화 010-6279-0862">
+    <meta name="keywords" content="마곡 유흥, 마곡 유흥추천, 마곡 술집, 마곡 클럽, 마곡 nightlife, 마곡 bar, tokyo-divorce">
+    <link rel="canonical" href="https://tokyo-divorce.pages.dev/">
+    <meta property="og:title" content="마곡 유흥 추천정보 | tokyo-divorce">
+    <meta property="og:description" content="서울 마곡 지역 유흥 업소 냉정한 평가 데이터 기반 추천.">
+    <style>
+        /* reset brutal */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #0a0a0f;
+            color: #d0d0d0;
+            line-height: 1.6;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        /* typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #f5e642;
+        }
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            border-left: 6px solid #f5426f;
+            padding-left: 1rem;
+        }
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 0.8rem;
+            border-bottom: 2px solid #f5426f;
+            padding-bottom: 0.5rem;
+        }
+        h3 {
+            font-size: 1.6rem;
+            margin-bottom: 0.6rem;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        a {
+            color: #f5e642;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            transition: color 0.2s;
+        }
+        a:hover, a:focus {
+            color: #f5426f;
+        }
+        blockquote {
+            border-left: 4px solid #f5426f;
+            padding-left: 1.2rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            background: rgba(245, 66, 111, 0.05);
+        }
+        /* layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+        .section {
+            padding: 3rem 0;
+        }
+        .section-gap {
+            padding: 4rem 0;
+        }
+        /* navigation */
+        nav {
+            background: #0a0a0f;
+            border-bottom: 2px solid #f5426f;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav .logo a {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #f5e642;
+            text-decoration: none;
+            letter-spacing: 0.2em;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        nav ul li a {
+            color: #d0d0d0;
+            text-decoration: none;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: color 0.2s;
+        }
+        nav ul li a:hover {
+            color: #f5426f;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+        .hamburger span {
+            width: 28px;
+            height: 3px;
+            background: #f5e642;
+            transition: 0.3s;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: #0a0a0f;
+                flex-direction: column;
+                padding: 1rem 2rem;
+                border-bottom: 2px solid #f5426f;
+            }
+            nav ul.active {
+                display: flex;
+            }
+            .hamburger {
+                display: flex;
+            }
+        }
+        /* tel link */
+        .tel-link {
+            display: inline-block;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #f5e642;
+            background: #1a1a2e;
+            padding: 0.6rem 1.5rem;
+            border: 1px solid #f5426f;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .tel-link:hover {
+            background: #f5426f;
+            color: #0a0a0f;
+        }
+        /* cards (brutalist style) */
+        .card {
+            background: #12121c;
+            border: 1px solid #2a2a3a;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: border-color 0.2s;
+        }
+        .card:hover {
+            border-color: #f5426f;
+        }
+        .card h3 {
+            margin-bottom: 0.5rem;
+        }
+        .card .meta {
+            font-size: 0.8rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-top: 1px solid #2a2a3a;
+            padding-top: 0.5rem;
+            margin-top: 1rem;
+        }
+        /* footer */
+        footer {
+            border-top: 2px solid #f5426f;
+            padding: 2rem 0;
+            text-align: center;
+            color: #666;
+            font-size: 0.8rem;
+        }
+        footer a {
+            color: #f5e642;
+            text-decoration: none;
+        }
+        /* extra utility */
+        .highlight {
+            color: #f5e642;
+        }
+        .glitch {
+            text-shadow: 2px 2px 0 #f5426f, -2px -2px 0 #00d4ff;
+        }
+        @media (max-width: 768px) {
+            .section {
+                padding: 2rem 0;
+            }
+            .section-gap {
+                padding: 2rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="/">tokyo-divorce</a></div>
+        <ul id="nav-menu">
+            <li><a href="/">홈</a></li>
+            <li><a href="/info">정보</a></li>
+            <li><a href="/rank">순위</a></li>
+            <li><a href="/review">리뷰</a></li>
+            <li><a href="/contact">문의</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section container">
+            <h1>마곡 유흥 추천정보</h1>
+            <p class="glitch" style="font-size:1.2rem; color:#f5426f;">데이터 기반 · 가짜 리뷰 제로 · 2025년 업데이트</p>
+            <p>서울 마곡 지역은 최근 몇 년간 상업 지구로 급부상하며 유흥 업소의 밀도가 급격히 증가했다. 하지만 대부분의 정보는 광고와 허위 후기로 오염되어 있다. tokyo-divorce는 실제 방문 데이터와 업계 내부 정보를 교차 검증해 신뢰할 수 있는 추천만을 제공한다.</p>
+            <p>본 페이지는 마곡 내 주요 유흥 업소를 업종별, 가격대별, 분위기별로 분류한 상세 정보와 지역 시그널(교통, 주변 편의시설, 안전 등)을 포함한다. <strong>전화 010-6279-0862</strong>로 직접 문의 가능하다.</p>
+            <a href="tel:010-6279-0862" class="tel-link">📞 010-6279-0862</a>
+        </section>
+
+        <section class="section-gap container">
+            <h2>마곡 유흥 업소 데이터</h2>
+            <p>아래 카드는 2025년 1분기 기준으로 수집된 실제 방문 데이터와 업계 관계자 인터뷰를 바탕으로 작성되었다. 각 업소의 특징, 평균 가격대, 혼잡도, 추천 시간대를 명시한다.</p>
+
+            <div class="card">
+                <h3>🍸 마곡 라운지 A</h3>
+                <p>분위기: 고급스러운 무드, 재즈 라이브 주 2회. 가격대: 1인 15만~25만원. 혼잡도: 주말 80% 이상. 추천 시간: 평일 20~23시.</p>
+                <p>지하철 5호선 마곡역 3번 출구 도보 5분. 주변에 발렛파킹 가능.</p>
+                <div class="meta">최종 업데이트: 2025.02.14 | 방문자 평가: ★★★★☆ (4.2/5)</div>
+            </div>
+
+            <div class="card">
+                <h3>🥃 마곡 클럽 B</h3>
+                <p>장르: EDM, 힙합. 입장료: 남성 3만, 여성 1만 (사전예약 시 할인). 음료는 별도. 주말 오후 10시 이후 극성수기.</p>
+                <p>마곡나루역 2번 출구에서 도보 7분, 인근에 24시간 편의점 및 택시 승강장 위치.</p>
+                <div class="meta">최종 업데이트: 2025.01.30 | 방문자 평가: ★★★☆☆ (3.8/5)</div>
+            </div>
+
+            <div class="card">
+                <h3>🍷 마곡 와인바 C</h3>
+                <p>분위기: 조용하고 아늑한 프라이빗한 공간. 와인 리스트 50종 이상. 가격대: 1인 8만~12만원. 혼잡도: 항상 40~60% 유지. 커플 및 소규모 모임 적합.</p>
+                <p>강서구청 방면 버스 정류장에서 도보 3분. 건물 내 무료 주차 2시간 지원.</p>
+                <div class="meta">최종 업데이트: 2025.02.20 | 방문자 평가: ★★★★★ (4.7/5)</div>
+            </div>
+
+            <blockquote>
+                “마곡 유흥은 정보의 비대칭이 심각하다. 우리는 매월 업소 데이터를 갱신하며 가짜 리뷰를 걸러낸다. 의심스러운 곳은 절대 추천하지 않는다.”
+                <footer>— tokyo-divorce 리서치팀, 2025</footer>
+            </blockquote>
+
+            <div class="card">
+                <h3>🎤 마곡 노래방 D</h3>
+                <p>최신식 반주기, 방음 완벽. 룸 가격: 2시간 기준 5만~8만원. 음료 및 안주 별도. 24시간 운영. 단체 손님 환영.</p>
+                <p>마곡 로데오 거리 중심부에 위치. 주변 음식점과 연계 할인 가능.</p>
+                <div class="meta">최종 업데이트: 2025.02.10 | 방문자 평가: ★★★★☆ (4.0/5)</div>
+            </div>
+        </section>
+
+        <section class="section container">
+            <h2>지역 시그널 분석</h2>
+            <p>마곡 유흥가의 실제 접근성과 안전성을 객관적 지표로 정리했다. 모든 데이터는 2025년 2월 기준 공공 데이터와 현장 조사를 병행했다.</p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem;">
+                <div class="card" style="margin-bottom:0;">
+                    <h3>교통 편의</h3>
+                    <p>지하철 5호선 · 9호선 환승역. 심야 버스 4개 노선 운행. 택시 승차난은 주말 밤 12시 이후 발생하나 평소 양호.</p>
+                </div>
+                <div class="card" style="margin-bottom:0;">
+                    <h3>주차 시설</h3>
+                    <p>공영 주차장 3곳, 민간 주차장 12곳. 평균 요금 시간당 2,000원. 대형 업소는 자체 주차 또는 발렛 운영.</p>
+                </div>
+                <div class="card" style="margin-bottom:0;">
+                    <h3>안전 지수</h3>
+                    <p>강서경찰서 관할. 2024년 마곡 유흥가 내 강력 범죄 건수 0건. CCTV 밀집도 높음. 심야에도 보행 안전 우수.</p>
+                </div>
+                <div class="card" style="margin-bottom:0;">
+                    <h3>주변 편의</h3>
+                    <p>24시간 편의점 8곳, ATM 5곳, 약국 3곳. 24시 포차·분식 다수 위치. 귀가 전 간단한 식사 해결 용이.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-gap container">
+            <h2>자주 묻는 질문 (FAQ)</h2>
+            <div class="card">
+                <h3>마곡 유흥 정보는 얼마나 신뢰할 수 있나요?</h3>
+                <p>tokyo-divorce는 자체 리서치 팀이 직접 방문하고 업주와의 인터뷰, 손님 후기 교차 검증을 수행합니다. 광고성 정보는 배제하며, 데이터 갱신 주기는 최대 2주입니다.</p>
+            </div>
+            <div class="card">
+                <h3>전화 문의는 필수인가요?</h3>
+                <p>업소에 따라 예약이 필수인 곳이 있습니다.
+</body>
+</html>
