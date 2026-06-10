@@ -1,20 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title><![CDATA[마곡 마곡 유흥 추천정보]]></title>
+  <title><![CDATA[유흥]]></title>
   <link>https://tokyo-divorce.pages.dev</link>
-  <description><![CDATA[마곡 유흥 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-  <language>ko-KR</language>
-  <pubDate>Thu, 28 May 2026 14:23:33 GMT</pubDate>
-  <lastBuildDate>Thu, 28 May 2026 14:23:33 GMT</lastBuildDate>
+  <description><![CDATA[유흥 - 마곡 유흥 추천정보 관련 최신 소식 및 가이드]]></description>
+  <language>ko</language>
+  <pubDate>Fri, 05 Jun 2026 10:38:21 GMT</pubDate>
+  <lastBuildDate>Fri, 05 Jun 2026 10:38:21 GMT</lastBuildDate>
   <atom:link href="https://tokyo-divorce.pages.dev/feed.xml" rel="self" type="application/rss+xml" />
   
     <item>
-      <title><![CDATA[마곡 마곡 유흥 추천정보 - 공식 홈페이지 오픈 안내]]></title>
-      <link>https://tokyo-divorce.pages.dev/</link>
-      <guid isPermaLink="true">https://tokyo-divorce.pages.dev/</guid>
-      <description><![CDATA[마곡 유흥 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-      <pubDate>Thu, 28 May 2026 14:23:33 GMT</pubDate>
+      <title><![CDATA[홍대, 살아남으려면 철판 깔던가.]]></title>
+      <link>https://tokyo-divorce.pages.dev/posts/guide-003.html</link>
+      <guid isPermaLink="true">https://tokyo-divorce.pages.dev/posts/guide-003.html</guid>
+      <description><![CDATA[홍대 2023년? 솔직히 볼썽사나웠다. 내가 단골이던 곳들 중에 꽤 문 닫았다. 특히 작년에 '인스타 감성' 한창 유행할 때 우후죽순 생기던 브런치 카페나 퓨전 레스토랑들 말이야. 대충 봐도 원가 계산 틀린 곳이 태반이었다. 내가 앉아서 메뉴판 훑어보면서 대충 식자재 ]]></description>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[권리금 2억? 그거 받으려고 3년 굴린 마곡 A급 상가, 속사정 까발린다]]></title>
+      <link>https://tokyo-divorce.pages.dev/posts/review-001.html</link>
+      <guid isPermaLink="true">https://tokyo-divorce.pages.dev/posts/review-001.html</guid>
+      <description><![CDATA[night, city, cityscape, urban, street, neon_signs, building, lights, sky, dark, blue_sky, night_sky, downtown, cityscape_at_night, illuminated, metrop]]></description>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[권리금 2억 썰, 그 돈으로 마곡에서 뭘 사는지 알면 놀랄걸?]]></title>
+      <link>https://tokyo-divorce.pages.dev/posts/review-002.html</link>
+      <guid isPermaLink="true">https://tokyo-divorce.pages.dev/posts/review-002.html</guid>
+      <description><![CDATA[bar, counter, alcohol, drink, bottle, champagne, cocktail, glass, interior, luxury, elegant, dim_lighting, sophisticated, upscale, nightlife, evening,]]></description>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate>
     </item>
 </channel>
 </rss>
