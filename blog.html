@@ -2,166 +2,269 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <title>마곡 유흥 추천정보 | tokyo-divorce 블로그</title>
-    <meta name="description" content="서울 마곡 지역 유흥 업소에 대한 냉정한 데이터 기반 평가와 통계 분석. 가짜 리뷰 없는 진짜 정보로 방문 전 확인하세요. 전화 010-6279-0862">
-    <meta name="keywords" content="마곡 유흥, 마곡 유흥추천, 마곡 술집, 마곡 클럽, 마곡 nightlife, 마곡 bar, tokyo-divorce, 마곡 유흥 정보">
-    <link rel="canonical" href="https://pub-jongno-pro.xyz/blog.html">
-    <meta property="og:title" content="마곡 유흥 추천정보 | tokyo-divorce 블로그">
-    <meta property="og:description" content="서울 마곡 지역 유흥 업소에 대한 냉정한 데이터 기반 평가와 통계 분석.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마곡 유흥 추천정보 - 데이터 기반 분석과 공간 선정 가이드</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="강변을 따라 확장된 마곡 상권의 엔터테인먼트 지형을 분석합니다. 고단가 클럽부터 소규모 펍까지, 방문 목적에 따른 공간 선정 기준과 실전 체크리스트를 데이터로 정리했습니다.">
+    <meta name="keywords" content="마곡 유흥 추천정보, 마곡 클럽, 마곡 라이브바, 강남동 마곡, 마곡 상권 분석, 야경 명소, 엔터테인먼트 트렌드">
+    <link rel="canonical" href="https://magoh-entertainment-guide.kr/blog/analysis.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://magoh-entertainment-guide.kr/blog/analysis.html">
+    <meta property="og:title" content="마곡 유흥 추천정보 - 데이터 기반 분석과 공간 선정 가이드">
+    <meta property="og:description" content="강변을 따라 확장된 마곡 상권의 엔터테인먼트 지형을 분석합니다. 방문 목적에 따른 공간 선정 기준과 실전 체크리스트를 정리했습니다.">
+    
+    <!-- CSS Core (Inherited System) -->
     <style>
-        /* reset brutal */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #0a0a0a; color: #e0e0e0; line-height: 1.6; padding: 20px; }
-
-        /* typography */
-        h1, h2, h3, h4, h5, h6 { font-weight: 800; letter-spacing: -0.02em; text-transform: uppercase; }
-        h1 { font-size: 2.8rem; color: #ff2a6d; margin-bottom: 0.5rem; border-left: 6px solid #05d9e8; padding-left: 20px; }
-        h2 { font-size: 2rem; color: #05d9e8; margin-top: 2rem; margin-bottom: 1rem; border-bottom: 2px solid #ff2a6d; padding-bottom: 0.3rem; }
-        h3 { font-size: 1.4rem; color: #ff2a6d; margin-top: 1.5rem; margin-bottom: 0.5rem; }
-        p { margin-bottom: 1.2rem; font-size: 1.05rem; }
-        a { color: #05d9e8; text-decoration: none; border-bottom: 2px solid transparent; transition: 0.2s; }
-        a:hover, a:focus { color: #ff2a6d; border-bottom-color: #ff2a6d; }
-        blockquote { margin: 1.5rem 0; padding: 1rem 2rem; border-left: 5px solid #ff2a6d; background: #1a1a1a; font-style: italic; }
-
-        /* layout */
-        .container { max-width: 960px; margin: 0 auto; }
-        @media (max-width: 768px) {
-            body { padding: 12px; }
-            h1 { font-size: 2rem; padding-left: 12px; }
-            h2 { font-size: 1.5rem; }
+        :root {
+            --primary-color: #1a2530; /* Deep Navy */
+            --secondary-color: #c4a87b; /* Champagne Gold */
+            --accent-color: #e6e9ed; /* Light Gray */
+            --text-main: #333333;
+            --text-sub: #666666;
+            --bg-body: #ffffff;
+            --border-radius: 8px;
+            --shadow-soft: 0 4px 20px rgba(0,0,0,0.05);
+            --font-main: 'Noto Sans KR', sans-serif;
         }
 
-        .section { margin-bottom: 3rem; }
-        .section-gap { padding: 2rem 0; border-top: 1px solid #2a2a2a; }
-
-        /* nav-present */
-        nav { display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 0; border-bottom: 2px solid #ff2a6d; margin-bottom: 2rem; }
-        nav .logo { font-size: 1.8rem; font-weight: 900; color: #05d9e8; text-transform: uppercase; letter-spacing: 0.1em; }
-        nav .logo span { color: #ff2a6d; }
-        nav ul { list-style: none; display: flex; gap: 2rem; }
-        nav ul li a { font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; }
-        nav ul li a.active { color: #ff2a6d; border-bottom: 2px solid #ff2a6d; }
-
-        /* hamburger-menu (responsive) */
-        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; padding: 5px; }
-        .hamburger span { width: 28px; height: 3px; background: #e0e0e0; transition: 0.3s; }
-        @media (max-width: 768px) {
-            nav ul { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; right: 0; background: #0a0a0a; padding: 1rem 2rem; border-bottom: 2px solid #ff2a6d; }
-            nav ul.open { display: flex; }
-            .hamburger { display: flex; }
-            nav { position: relative; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: var(--font-main);
+            color: var(--text-main);
+            background-color: var(--bg-body);
+            line-height: 1.7;
         }
 
-        /* tel-link */
-        .tel-link { display: inline-block; background: #ff2a6d; color: #0a0a0a; padding: 0.6rem 1.5rem; font-weight: 800; text-transform: uppercase; border: none; cursor: pointer; transition: 0.2s; font-size: 1rem; letter-spacing: 0.05em; }
-        .tel-link:hover { background: #05d9e8; color: #0a0a0a; }
+        /* Layout Wrapper */
+        .wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
-        /* card-like */
-        .card { background: #141414; border: 1px solid #2a2a2a; padding: 2rem; margin-bottom: 2rem; }
-        .card h3 { margin-top: 0; }
-        .card .stat { font-size: 2.5rem; font-weight: 900; color: #ff2a6d; line-height: 1; }
+        /* Navigation - Simplified for this page context but consistent */
+        .site-header {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .header-brand h1 {
+            font-weight: 300;
+            letter-spacing: -1px;
+            font-size: 2.5rem;
+        }
 
-        /* faq */
-        .faq-item { margin-bottom: 1rem; border-left: 3px solid #05d9e8; padding-left: 1rem; }
-        .faq-item .q { font-weight: 700; color: #ff2a6d; }
-        .faq-item .a { margin-top: 0.3rem; }
+        /* Main Content Area */
+        .main-container {
+            flex: 1;
+            padding: 4rem 2rem;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
 
-        footer { text-align: center; padding: 2rem 0; border-top: 1px solid #2a2a2a; margin-top: 3rem; font-size: 0.85rem; color: #666; }
+        /* Typography & Components */
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+            border-left: 4px solid var(--secondary-color);
+            padding-left: 1rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            font-weight: 300;
+        }
+
+        .highlight-box {
+            background-color: var(--accent-color);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        ul.content-list {
+            list-style: none;
+            padding-left: 1.5rem;
+        }
+
+        ul.content-list li::before {
+            content: "•";
+            color: var(--secondary-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .stat-card {
+            background: var(--primary-color);
+            color: #fff;
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            display: block;
+            color: var(--secondary-color);
+        }
+
+        /* Sidebar - Minimalist */
+        aside {
+            position: sticky;
+            top: 4rem;
+            height: fit-content;
+        }
+
+        .sticky-box {
+            background: var(--accent-color);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            margin-bottom: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: #8da3b1;
+            text-align: center;
+            padding: 2rem;
+            margin-top: auto;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .main-container {
+                grid-template-columns: 1fr;
+                padding: 2rem 1rem;
+            }
+            aside {
+                position: static;
+            }
+            .header-brand h1 { font-size: 1.8rem; }
+        }
     </style>
-  <meta property="og:url" content="https://pub-jongno-pro.xyz/blog.html">
+
+    <!-- JSON-LD Schema (BlogPosting) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://magoh-entertainment-guide.kr/blog/analysis.html"
+      },
+      "headline": "마곡 유흥 추천정보 - 데이터 기반 분석과 공간 선정 가이드",
+      "description": "강변을 따라 확장된 마곡 상권의 엔터테인먼트 지형을 분석합니다.",
+      "image": [
+        "https://magoh-entertainment-guide.kr/images/og-analysis.jpg"
+       ],
+      "datePublished": "2024-05-15",
+      "dateModified": "2024-06-10",
+      "author": {
+        "@type": "Organization",
+        "name": "Urban Insight Team"
+      },
+      "publisher": {
+        "@type": "MediaOrganization",
+        "name": "마곡 유흥 가이드",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://magoh-entertainment-guide.kr/logo.png"
+        }
+      }
+    }
+    </script>
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <div class="logo">tokyo<span>-divorce</span></div>
-            <ul>
-                <li><a href="/">홈</a></li>
-                <li><a href="/info">정보</a></li>
-                <li><a href="/blog" class="active">블로그</a></li>
-                <li><a href="/contact">연락처</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
 
-        <h1>마곡 유흥 추천정보</h1>
-        <p style="font-size: 1.2rem; color: #888; margin-top: -0.5rem;">데이터가 말해주는<br>진짜 마곡의 밤</p>
-
-        <div class="section">
-            <div class="card">
-                <h2>2025년 상반기 마곡 유흥업소 실태 분석</h2>
-                <p>서울 마곡지구는 최근 3년간 유흥업소 밀도가 47% 증가했다. 하지만 온라인 리뷰의 신뢰도는 급격히 하락하고 있다. tokyo-divorce는 2024년 12월부터 2025년 3월까지 마곡 내 62개 업소를 직접 방문, 객관적 데이터를 수집했다.</p>
-                <p>결론부터 말하자면: <strong>별점 4.5 이상 업소의 73%는 가짜 리뷰를 사용한다.</strong> 우리의 평가 기준은 간단하다. 음질, 조명, 서비스 응대 시간, 혼잡도, 실제 음료 가격 대비 만족도. 이 다섯 가지 지표를 0~10점으로 계량화했다.</p>
-                <div style="display: flex; gap: 2rem; flex-wrap: wrap; margin: 1.5rem 0;">
-                    <div><span class="stat">62</span><br><span style="font-size: 0.85rem; color: #888;">조사 업소</span></div>
-                    <div><span class="stat">4.2</span><br><span style="font-size: 0.85rem; color: #888;">평균 종합점수</span></div>
-                    <div><span class="stat">73%</span><br><span style="font-size: 0.85rem; color: #888;">가짜 리뷰 비율</span></div>
-                </div>
-                <p>가장 충격적인 사례는 '라운지X'였다. 포털사이트 평점 4.8, 리뷰 120개. 직접 방문 결과 실제 만족도는 2.1점. 직원 응대 시간 평균 9분, 칵테일 가격 대비 퀄리티는 최하위. 이런 업소가 '추천'된다면 당신은 돈과 시간을 낭비하는 것이다.</p>
-            </div>
-
-            <div class="section-gap"></div>
-
-            <h2>마곡 유흥, 무엇을 기준으로 선택해야 하는가</h2>
-            <p>우리의 데이터베이스는 투명하게 공개된다. 업소별로 위 다섯 가지 지표를 점수화했으며, 최종 추천 여부는 7.0 이상만 인정한다. 아래는 업종별 주요 인사이트다.</p>
-            <blockquote>“마곡에서 진짜를 찾고 있다면, 시간당 회전율이 3회 이상인 업소를 피하라. 이는 고객을 '소모품'으로 대우한다는 증거다.” — tokyo-divorce 연구팀</blockquote>
-
-            <h3>클럽</h3>
-            <p>12개 클럽 조사 결과, 음질과 조명이 평균 이상인 곳은 단 4곳. 혼잡도가 낮으면서 음악 큐레이션이 뛰어난 '베이스먼트'가 8.3점으로 1위. 입장료는 3만원대이지만 내부 음료 가격이 합리적(맥주 5,000원)이라는 점이 높은 점수로 이어졌다.</p>
-
-            <h3>바 / 라운지</h3>
-            <p>마곡의 바는 '가성비'와 '분위기' 두 축으로 나뉜다. 28개 바 중에서 두 조건을 모두 충족한 업소는 6곳. '블랙라벨'은 칵테일 퀄리티(9.1점)가 독보적이지만 서비스 속도(5.2점)가 발목을 잡는다. 반면 '스피크이지'는 모든 항목에서 7.5점 이상으로 가장 안정적인 선택지다.</p>
-
-            <h3>유흥주점</h3>
-            <p>22개 업소 중 15곳이 '2차 유도' 영업을 강하게 한다. 이는 우리 평가에서 마이너스 요인이다. 오직 3곳만이 투명한 가격 정책과 강제적인 추가 주문이 없는 환경을 제공했다. 그중 '살롱드마곡'이 8.7점으로 최고점을 기록했다.</p>
-
-            <div class="section-gap"></div>
-
-            <h2>FAQ: 마곡 유흥, 현실적인 질문들</h2>
-            <div class="faq-item">
-                <p class="q">Q: 마곡에서 온라인 리뷰를 전혀 믿을 수 없나요?</p>
-                <p class="a">A: 완전히 무시할 필요는 없다. 다만 리뷰 수가 50개 이상이면서 평점이 4.5를 넘는 경우, 리뷰 내용 중 '분위기 좋아요' '친절해요' 같은 모호한 표현이 60% 이상이면 가짜일 확률이 90%다. 우리 데이터는 리뷰 텍스트의 언어 패턴 분석을 통해 검증했다.</p>
-            </div>
-            <div class="faq-item">
-                <p class="q">Q: 혼자 방문해도 괜찮은 곳이 있나요?</p>
-                <p class="a">A: 있다. '솔로바' '원더스' 등 3곳은 1인 고객 비율이 40% 이상이며, 강제 테이블 sharing이나 추가 요금이 없다. 단, 주말에는 예약이 필수다.</p>
-            </div>
-            <div class="faq-item">
-                <p class="q">Q: 가장 신뢰할 수 있는 정보처는?</p>
-                <p class="a">A: 당연히 tokyo-divorce다. 우리는 광고비를 받지 않으며, 모든 방문 비용을 자체 부담한다. 각 업소의 영업 허가증, 주류 판매 기록까지 교차 검증한다.</p>
-            </div>
-
-            <div class="section-gap"></div>
-
-            <p style="border: 1px solid #ff2a6d; padding: 1.5rem; background: #1a000a;">
-                <strong>면책사항</strong>: 본 데이터는 2025년 3월 기준이며, 업소의 상황은 변할 수 있다. 항상 방문 전 전화 확인을 권장한다. tokyo-divorce는 어떠한 업소와도 재정적 이해관계가 없다.
-            </p>
+<div class="wrapper">
+    <header class="site-header">
+        <div class="header-brand">
+            <h1>URBAN ENTERTAINMENT INSIGHTS</h1>
         </div>
+    </header>
 
-        <footer>
-            <p>© tokyo-divorce.pages.dev — 데이터 기반 마곡 유흥 정보</p>
-            <p style="margin-top: 0.5rem;"><a href="tel:01062790862" class="tel-link">010-6279-0862</a></p>
-        </footer>
+    <main class="main-container">
+        <!-- Article Body -->
+        <article>
+            <header>
+                <span style="color: var(--text-sub); font-size: 0.9rem; text-transform: uppercase;">Location Analysis Report</span>
+                <h1>마곡 유흥 추천정보 - 데이터 기반 분석과 공간 선정 가이드</h1>
+            </header>
+
+            <div class="highlight-box">
+                <p><strong>요약:</strong> 본 보고서는 서울 동탄신도시와 강변을 잇는 마곡 상권 내 유흥 시설의 지리적 분포와 운영 특성을 분석한 것입니다. 단순한 목록 나열을 넘어, 방문객의 니즈 (Need) 와 공간의 공급 (Supply) 을 매칭하는 데이터에 기반하여 최적의 접근법을 제시합니다.</p>
+            </div>
+
+            <section>
+                <h2>01. ᄆ마곡 유흥 지형 분석: 강변과 고밀도의 조화</h2>
+                <p>마곡은 2015 년 이후 급격히 성장한 신도시로서, 기존의 도심 유흥권인 홍대나 강남에 비해 상대적으로 '새벽'이나 '야경'이라는 키워드가 강력하게 연결되는 지역입니다. 특히 한강변을 따라 이어지는 보도와 거리는 야간 접근성을 높여주며, 이는 해당 지역의 엔터테인먼트 시설들이 야외 혹은 반외부적인 디자인 (Open Space Concept) 을ᆯ 선호하는 배경이 됩니다.</p>
+                <p>상권의 즁심인 마곡3동과 4동을 중심으로 클럽 및 라이브 바가 분포해 있으며, 전체적인 분위기는 '신뢰도 높은 고단가 공간'에서 '젊은 층을 타겟팅한 트렌디한 펍'까지 다양한 스펙트럼을 보여줍니다.</p>
+            
+<div class="seo-visual-divider" role="separator" aria-label="마곡 유흥 추천정보 구분선" style="margin:32px 0;text-align:center;color:#e5e5e0;font-size:0.85rem;letter-spacing:0.5em">◆ ◆ ◆</div>
+</section>
+
+<!-- SEO Visual 2: 유흥 Cardless Editorial List -->
+<div class="seo-visual-cards" role="img" aria-label="마곡 유흥 추천정보 유흥 — 강남 유흥 정보" 
+     style="display:flex;flex-direction:column;gap:0;margin:40px 0;border-top:1px solid #e5e5e0;border-bottom:1px solid #e5e5e0;background:#faf9f6">
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:1px solid #e5e5e0;background:transparent">
+    <div style="display:flex;align-items:center;gap:24px">
+      <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 01 ]</span>
+      <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">특화</span>
     </div>
+    <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">마곡 유흥 추천정보</span>
+  </div><div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:1px solid #e5e5e0;background:transparent">
+    <div style="display:flex;align-items:center;gap:24px">
+      <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 02 ]</span>
+      <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">다수 실적</span>
+    </div>
+    <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">마곡 유흥 추천정보</span>
+  </div><div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:none;background:transparent">
+    <div style="display:flex;align-items:center;gap:24px">
+      <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 03 ]</span>
+      <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">고품질</span>
+    </div>
+    <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">마곡 유흥 추천정보</span>
+  </div>
+</div>
 
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector('nav ul');
-            menu.classList.toggle('open');
-        }
-        // close menu on link click (mobile)
-        document.querySelectorAll('nav ul li a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.querySelector('nav ul').classList.remove('open');
-            });
-        });
-    </script>
-</body>
+            <section class="info-grid">
+                <div class="stat-card">
+                    <span style="font-size: 0.9rem; text-transform: uppercase;">Average Price Range</span>
+                    <span class="stat-number">$50 - $150</span>
+                    <span style="font-size: 0.8rem; opacity: 0.7;">(Headcount per person)</span>
+                </div>
+                <div class="stat-card">
+                    </body>
 </html>
