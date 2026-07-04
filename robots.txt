@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tokyo-divorce.node-link.shop/sitemap.xml
+Sitemap: https://magok-night-guide.node-link.shop/sitemap.xml
