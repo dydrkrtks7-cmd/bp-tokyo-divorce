@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yeomchang-fullsalon-note.infonest.online/sitemap.xml
-Sitemap: https://yeomchang-fullsalon-note.infonest.online/sitemap-pages.xml
+Sitemap: https://blog.pub-jongno-pro.xyz/sitemap.xml
+Sitemap: https://blog.pub-jongno-pro.xyz/sitemap-pages.xml
