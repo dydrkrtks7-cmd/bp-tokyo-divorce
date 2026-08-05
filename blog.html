@@ -1,167 +1,76 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <title>마곡 유흥 추천정보 | tokyo-divorce 블로그</title>
-    <meta name="description" content="서울 마곡 지역 유흥 업소에 대한 냉정한 데이터 기반 평가와 통계 분석. 가짜 리뷰 없는 진짜 정보로 방문 전 확인하세요. 전화 010-6279-0862">
-    <meta name="keywords" content="마곡 유흥, 마곡 유흥추천, 마곡 술집, 마곡 클럽, 마곡 nightlife, 마곡 bar, tokyo-divorce, 마곡 유흥 정보">
-    <link rel="canonical" href="https://blog.pub-jongno-pro.xyz/blog.html">
-    <meta property="og:title" content="마곡 유흥 추천정보 | tokyo-divorce 블로그">
-    <meta property="og:description" content="서울 마곡 지역 유흥 업소에 대한 냉정한 데이터 기반 평가와 통계 분석.">
-    <style>
-        /* reset brutal */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #0a0a0a; color: #e0e0e0; line-height: 1.6; padding: 20px; }
-
-        /* typography */
-        h1, h2, h3, h4, h5, h6 { font-weight: 800; letter-spacing: -0.02em; text-transform: uppercase; }
-        h1 { font-size: 2.8rem; color: #ff2a6d; margin-bottom: 0.5rem; border-left: 6px solid #05d9e8; padding-left: 20px; }
-        h2 { font-size: 2rem; color: #05d9e8; margin-top: 2rem; margin-bottom: 1rem; border-bottom: 2px solid #ff2a6d; padding-bottom: 0.3rem; }
-        h3 { font-size: 1.4rem; color: #ff2a6d; margin-top: 1.5rem; margin-bottom: 0.5rem; }
-        p { margin-bottom: 1.2rem; font-size: 1.05rem; }
-        a { color: #05d9e8; text-decoration: none; border-bottom: 2px solid transparent; transition: 0.2s; }
-        a:hover, a:focus { color: #ff2a6d; border-bottom-color: #ff2a6d; }
-        blockquote { margin: 1.5rem 0; padding: 1rem 2rem; border-left: 5px solid #ff2a6d; background: #1a1a1a; font-style: italic; }
-
-        /* layout */
-        .container { max-width: 960px; margin: 0 auto; }
-        @media (max-width: 768px) {
-            body { padding: 12px; }
-            h1 { font-size: 2rem; padding-left: 12px; }
-            h2 { font-size: 1.5rem; }
-        }
-
-        .section { margin-bottom: 3rem; }
-        .section-gap { padding: 2rem 0; border-top: 1px solid #2a2a2a; }
-
-        /* nav-present */
-        nav { display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 0; border-bottom: 2px solid #ff2a6d; margin-bottom: 2rem; }
-        nav .logo { font-size: 1.8rem; font-weight: 900; color: #05d9e8; text-transform: uppercase; letter-spacing: 0.1em; }
-        nav .logo span { color: #ff2a6d; }
-        nav ul { list-style: none; display: flex; gap: 2rem; }
-        nav ul li a { font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; }
-        nav ul li a.active { color: #ff2a6d; border-bottom: 2px solid #ff2a6d; }
-
-        /* hamburger-menu (responsive) */
-        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; padding: 5px; }
-        .hamburger span { width: 28px; height: 3px; background: #e0e0e0; transition: 0.3s; }
-        @media (max-width: 768px) {
-            nav ul { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; right: 0; background: #0a0a0a; padding: 1rem 2rem; border-bottom: 2px solid #ff2a6d; }
-            nav ul.open { display: flex; }
-            .hamburger { display: flex; }
-            nav { position: relative; }
-        }
-
-        /* tel-link */
-        .tel-link { display: inline-block; background: #ff2a6d; color: #0a0a0a; padding: 0.6rem 1.5rem; font-weight: 800; text-transform: uppercase; border: none; cursor: pointer; transition: 0.2s; font-size: 1rem; letter-spacing: 0.05em; }
-        .tel-link:hover { background: #05d9e8; color: #0a0a0a; }
-
-        /* card-like */
-        .card { background: #141414; border: 1px solid #2a2a2a; padding: 2rem; margin-bottom: 2rem; }
-        .card h3 { margin-top: 0; }
-        .card .stat { font-size: 2.5rem; font-weight: 900; color: #ff2a6d; line-height: 1; }
-
-        /* faq */
-        .faq-item { margin-bottom: 1rem; border-left: 3px solid #05d9e8; padding-left: 1rem; }
-        .faq-item .q { font-weight: 700; color: #ff2a6d; }
-        .faq-item .a { margin-top: 0.3rem; }
-
-        footer { text-align: center; padding: 2rem 0; border-top: 1px solid #2a2a2a; margin-top: 3rem; font-size: 0.85rem; color: #666; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>염창 풀싸롱 추천 가이드 - 블로그</title>
+<meta name="description" content="염창 풀싸롱 추천 가이드: 인원, 시간대, 목적에 따라 달라지는 선택 기준을 비교 중인 독자 관점에서 상세히 안내합니다. 이용 전 꼭 확인할 포인트 정리.">
+<meta name="keywords" content="염창 풀싸롱, 염창 풀싸롱 추천, 염창 풀싸롱 가이드, 조건별 선택, 인원별, 시간대별, 목적별, 풀싸롱 비교">
+<meta name="bpaas-design-system" content="editorial-apple">
+<meta name="bpaas-design-theme" content="kr-noir-gold">
+<link rel="canonical" href="https://blog.pub-jongno-pro.xyz/blog.html">
+<meta property="og:title" content="염창 풀싸롱 추천 가이드 - 블로그">
+<meta property="og:description" content="염창 풀싸롱 추천 가이드: 인원, 시간대, 목적에 따라 달라지는 선택 기준을 비교 중인 독자 관점에서 상세히 안내합니다. 이용 전 꼭 확인할 포인트 정리.">
+<link rel="stylesheet" href="styles.css">
   <meta property="og:url" content="https://blog.pub-jongno-pro.xyz/blog.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <div class="logo">tokyo<span>-divorce</span></div>
-            <ul>
-                <li><a href="/">홈</a></li>
-                <li><a href="/info">정보</a></li>
-                <li><a href="/blog" class="active">블로그</a></li>
-                <li><a href="/contact">연락처</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
 
-        <h1>마곡 유흥 추천정보</h1>
-        <p style="font-size: 1.2rem; color: #888; margin-top: -0.5rem;">데이터가 말해주는<br>진짜 마곡의 밤</p>
+<!-- Navigation Sidebar (common across all pages) -->
+<aside class="k-img-hn6d">
+    <div class="k-img-hn6d-title">염창 풀싸롱 가이드</div>
+    <nav>
+        <a href="/index.html" class="k-img-hn6d-link">홈</a>
+        <a href="/guide.html" class="k-img-hn6d-link">추천 가이드</a>
+        <a href="/tips.html" class="k-img-hn6d-link">이용 팁</a>
+        <a href="/faq.html" class="k-img-hn6d-link">FAQ</a>
+        <a href="/contact.html" class="k-img-hn6d-link">문의</a>
+    </nav>
+    <div class="k-img-hn6d-spacer"></div>
+    <div class="k-img-hn6d-copy">© 2026 염창 풀싸롱 정보센터</div>
+</aside>
 
-        <div class="section">
-            <div class="card">
-                <h2>2025년 상반기 마곡 유흥업소 실태 분석</h2>
-                <p>서울 마곡지구는 최근 3년간 유흥업소 밀도가 47% 증가했다. 하지만 온라인 리뷰의 신뢰도는 급격히 하락하고 있다. tokyo-divorce는 2024년 12월부터 2025년 3월까지 마곡 내 62개 업소를 직접 방문, 객관적 데이터를 수집했다.</p>
-                <p>결론부터 말하자면: <strong>별점 4.5 이상 업소의 73%는 가짜 리뷰를 사용한다.</strong> 우리의 평가 기준은 간단하다. 음질, 조명, 서비스 응대 시간, 혼잡도, 실제 음료 가격 대비 만족도. 이 다섯 가지 지표를 0~10점으로 계량화했다.</p>
-                <div style="display: flex; gap: 2rem; flex-wrap: wrap; margin: 1.5rem 0;">
-                    <div><span class="stat">62</span><br><span style="font-size: 0.85rem; color: #888;">조사 업소</span></div>
-                    <div><span class="stat">4.2</span><br><span style="font-size: 0.85rem; color: #888;">평균 종합점수</span></div>
-                    <div><span class="stat">73%</span><br><span style="font-size: 0.85rem; color: #888;">가짜 리뷰 비율</span></div>
-                </div>
-                <p>가장 충격적인 사례는 '라운지X'였다. 포털사이트 평점 4.8, 리뷰 120개. 직접 방문 결과 실제 만족도는 2.1점. 직원 응대 시간 평균 9분, 칵테일 가격 대비 퀄리티는 최하위. 이런 업소가 '추천'된다면 당신은 돈과 시간을 낭비하는 것이다.</p>
-            </div>
+<main>
+    <article class="k-img-hn6d-copy">
+        <h1>염창 풀싸롱, 선택에 난관이 있다면 이 글을 읽어라</h1>
 
-            <div class="section-gap"></div>
+        <section>
+            <h2>1. 인원별 선택 기준</h2>
+            <p>소규모 그룹(2~4인)이라면 프라이버시와 내부 공간의 넓이가 최우선이다. 작은 방 하나에 모두가 들어가도 불편함을 느끼지 않도록, 가구 배치와 방음 설비가 잘 갖춰진 곳을 고르는 것이 현명한 선택이다.</p>
+            <p>반면 대규모 파티(5인 이상)는 다양한 테마룸과 추가 서비스가 존재하는지를 체크해야 한다. 대형 라운지, 바, 그리고 다중 실내 시설을 제공하는 장소는 분위기 전환이 자유롭고, 사람마다 다른 취향을 만족시킬 가능성이 높다.</p>
+        </section>
 
-            <h2>마곡 유흥, 무엇을 기준으로 선택해야 하는가</h2>
-            <p>우리의 데이터베이스는 투명하게 공개된다. 업소별로 위 다섯 가지 지표를 점수화했으며, 최종 추천 여부는 7.0 이상만 인정한다. 아래는 업종별 주요 인사이트다.</p>
-            <blockquote>“마곡에서 진짜를 찾고 있다면, 시간당 회전율이 3회 이상인 업소를 피하라. 이는 고객을 '소모품'으로 대우한다는 증거다.” — tokyo-divorce 연구팀</blockquote>
+        <section>
+            <h2>2. 시간대별 이용 팁</h2>
+            <p>주중 낮시간대는 일반적으로 가격이 낮으며, 예약이 비교적 수월하다. 이때는 서비스 품질이 다소 낮을 수도 있지만, 가격 대비 효율을 중시한다면 최고의 선택이 될 수 있다.</p>
+            <p>주말 저녁과 심야는 수요가 급증한다. 따라서 사전 예약은 필수이며, 인기 있는 장소는 최소 2주 전부터 스케줄을 확보해야 한다. 또한, 심야 이용 시 보안과 안전 관리가 철저한지 확인하는 것이 중요하다.</p>
+        </section>
 
-            <h3>클럽</h3>
-            <p>12개 클럽 조사 결과, 음질과 조명이 평균 이상인 곳은 단 4곳. 혼잡도가 낮으면서 음악 큐레이션이 뛰어난 '베이스먼트'가 8.3점으로 1위. 입장료는 3만원대이지만 내부 음료 가격이 합리적(맥주 5,000원)이라는 점이 높은 점수로 이어졌다.</p>
+        <section>
+            <h2>3. 목적별 맞춤 포인트</h2>
+            <p>비즈니스 미팅 겸 네트워킹을 원한다면, 고급스러운 인테리어와 와인·주류 라인업이 풍부한 곳을 선택하라. 분위기가 너무 과격하면 대화가 방해받을 수 있으니, 세련된 조명과 소음 차단 설비가 구비된 곳을 찾아라.</p>
+            <p>친구와의 자유로운 파티가 목적이라면, 다양한 테마와 음악 시스템, 그리고 셀프 바가 있는 풀싸롱이 적합하다. 특히, 인터랙티브 게임이나 영상 시설이 구비된 방은 파티의 몰입도를 크게 끌어올린다.</p>
+        </section>
 
-            <h3>바 / 라운지</h3>
-            <p>마곡의 바는 '가성비'와 '분위기' 두 축으로 나뉜다. 28개 바 중에서 두 조건을 모두 충족한 업소는 6곳. '블랙라벨'은 칵테일 퀄리티(9.1점)가 독보적이지만 서비스 속도(5.2점)가 발목을 잡는다. 반면 '스피크이지'는 모든 항목에서 7.5점 이상으로 가장 안정적인 선택지다.</p>
+        <section>
+            <h2>4. 최종 체크리스트</h2>
+            <p>① 위치 : 대중교통 접근성 및 주차 가능 여부<br>② 가격 구조 : 기본 요금, 추가 옵션, 팁 정책<br>③ 위생 관리 : 청소 빈도와 소독 기록 공개 여부<br>④ 직원 태도 : 친절도와 전문성 검증<br>⑤ 부가 서비스 : 마사지, 테마룸, 음료 패키지 등</p>
+            <p>모든 체크리스트 항목을 사전에 확인하고, 실제 방문 전에 전화 혹은 온라인 챗으로 재확인하는 습관을 들이면 후회 없는 선택을 할 수 있다.</p>
+        </section>
 
-            <h3>유흥주점</h3>
-            <p>22개 업소 중 15곳이 '2차 유도' 영업을 강하게 한다. 이는 우리 평가에서 마이너스 요인이다. 오직 3곳만이 투명한 가격 정책과 강제적인 추가 주문이 없는 환경을 제공했다. 그중 '살롱드마곡'이 8.7점으로 최고점을 기록했다.</p>
+        <section>
+            <h2>5. 자주 묻는 질문(FAQ)</h2>
+            <h3>Q1. 예약 취소 정책은 어떻게 되나요?</h3>
+            <p>대부분의 풀싸롱은 24시간 전까지는 무료 취소가 가능하고, 그 이후에는 전액 혹은 절반 요금을 청구한다. 하지만 특정 고급 라운지는 예약금이 선불로 차감될 수 있다.</p>
+            <h3>Q2. 남녀 혼성 이용이 가능한가요?</h3>
+            <p>법적 제약으로 인해 남녀 혼성 전용 방은 제한적이다. 혼성 이용이 가능하다고 명시된 장소는 반드시 사전 확인 후 이용해야 하며, 별도의 신분 확인 절차가 있을 수 있다.</p>
+            <h3>Q3. 안전하게 이용하려면 어떤 점을 주의해야 하나요?</h3>
+            <p>입구에 CCTV가 설치되어 있는지, 비상 연락망이 제공되는지 확인하고, 개인 물품은 반드시 보관함에 넣어 두는 것이 좋다. 또한, 과음은 삼가고, 몸 상태가 좋지 않을 경우 즉시 직원에게 알리는 것이 책임 있는 이용 방법이다.</p>
+        </section>
+    </article>
+</main>
 
-            <div class="section-gap"></div>
-
-            <h2>FAQ: 마곡 유흥, 현실적인 질문들</h2>
-            <div class="faq-item">
-                <p class="q">Q: 마곡에서 온라인 리뷰를 전혀 믿을 수 없나요?</p>
-                <p class="a">A: 완전히 무시할 필요는 없다. 다만 리뷰 수가 50개 이상이면서 평점이 4.5를 넘는 경우, 리뷰 내용 중 '분위기 좋아요' '친절해요' 같은 모호한 표현이 60% 이상이면 가짜일 확률이 90%다. 우리 데이터는 리뷰 텍스트의 언어 패턴 분석을 통해 검증했다.</p>
-            </div>
-            <div class="faq-item">
-                <p class="q">Q: 혼자 방문해도 괜찮은 곳이 있나요?</p>
-                <p class="a">A: 있다. '솔로바' '원더스' 등 3곳은 1인 고객 비율이 40% 이상이며, 강제 테이블 sharing이나 추가 요금이 없다. 단, 주말에는 예약이 필수다.</p>
-            </div>
-            <div class="faq-item">
-                <p class="q">Q: 가장 신뢰할 수 있는 정보처는?</p>
-                <p class="a">A: 당연히 tokyo-divorce다. 우리는 광고비를 받지 않으며, 모든 방문 비용을 자체 부담한다. 각 업소의 영업 허가증, 주류 판매 기록까지 교차 검증한다.</p>
-            </div>
-
-            <div class="section-gap"></div>
-
-            <p style="border: 1px solid #ff2a6d; padding: 1.5rem; background: #1a000a;">
-                <strong>면책사항</strong>: 본 데이터는 2025년 3월 기준이며, 업소의 상황은 변할 수 있다. 항상 방문 전 전화 확인을 권장한다. tokyo-divorce는 어떠한 업소와도 재정적 이해관계가 없다.
-            </p>
-        </div>
-
-        <footer>
-            <p>© tokyo-divorce.pages.dev — 데이터 기반 마곡 유흥 정보</p>
-            <p style="margin-top: 0.5rem;"><a href="tel:01062790862" class="tel-link">010-6279-0862</a></p>
-        </footer>
-    </div>
-
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector('nav ul');
-            menu.classList.toggle('open');
-        }
-        // close menu on link click (mobile)
-        document.querySelectorAll('nav ul li a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.querySelector('nav ul').classList.remove('open');
-            });
-        });
-    </script>
 </body>
 </html>
